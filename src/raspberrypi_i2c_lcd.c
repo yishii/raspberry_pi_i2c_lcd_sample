@@ -32,7 +32,7 @@ int main(void)
     sendLcdInit(fd);
     sendLcdString(fd,"Hello");
     
-    close(fp);
+    close(fd);
 }
 
 int sendLcdInit(int fd)
