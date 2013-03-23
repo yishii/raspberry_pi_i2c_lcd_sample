@@ -84,6 +84,7 @@ int sendLcdString(int fd,char* str)
 int sendLcdLocateXY(int fd,int row,int col)
 {
     unsigned char buff[2];
+    int result;
 
     buff[0] = 0x00;
     buff[1] = 0x40;
